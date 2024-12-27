@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : ven. 27 déc. 2024 à 22:31
+-- Généré le : ven. 27 déc. 2024 à 23:28
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -181,17 +181,15 @@ CREATE TABLE `bookings` (
 --
 
 INSERT INTO `bookings` (`id`, `user_id`, `room_id`, `check_in`, `check_out`, `guests`, `total_price`, `status`, `payment_id`, `payment_method`, `payment_date`, `created_at`) VALUES
-(1, 1, 41, '2025-01-01', '2025-01-31', 0, 16500.00, 'confirmed', 'CC_1735261638609', 'credit_card', '2024-12-27 02:07:18', '2024-12-27 01:07:03'),
 (2, 1, 39, '2025-01-07', '2025-01-31', 0, 28800.00, 'confirmed', 'CC_1735261775953', 'credit_card', '2024-12-27 02:09:36', '2024-12-27 01:09:21'),
-(3, 1, 50, '2024-12-27', '2024-12-27', 0, 0.00, 'confirmed', 'CC_1735262344806', 'credit_card', '2024-12-27 02:19:04', '2024-12-27 01:16:54'),
-(4, 1, 50, '2025-01-08', '2025-01-31', 0, 69000.00, 'confirmed', 'CC_1735262328953', 'credit_card', '2024-12-27 02:18:49', '2024-12-27 01:18:35'),
-(5, 1, 44, '2025-01-01', '2025-01-31', 0, 17400.00, 'confirmed', NULL, NULL, NULL, '2024-12-27 01:20:37'),
+(5, 1, 44, '2025-01-01', '2025-01-31', 0, 17400.00, 'confirmed', 'CC_1735337442411', 'credit_card', '2024-12-27 23:10:42', '2024-12-27 01:20:37'),
 (6, 1, 37, '2025-01-01', '2025-01-31', 0, 13500.00, 'confirmed', NULL, NULL, NULL, '2024-12-27 01:21:19'),
-(7, 1, 37, '2025-01-31', '2025-02-28', 0, 12600.00, 'confirmed', 'CC_1735262579795', 'credit_card', '2024-12-27 02:22:59', '2024-12-27 01:22:34'),
 (8, 1, 43, '2025-01-01', '2025-01-31', 0, 10500.00, 'cancelled', 'CC_1735316340564', 'credit_card', '2024-12-27 17:19:00', '2024-12-27 16:18:04'),
 (10, 1, 51, '2025-01-01', '2025-01-31', 0, 24000.00, 'confirmed', 'CC_1735330268458', 'credit_card', '2024-12-27 21:11:08', '2024-12-27 20:10:57'),
-(11, 6, 39, '2025-02-01', '2025-02-28', 0, 32400.00, 'confirmed', 'CC_1735330631048', 'credit_card', '2024-12-27 21:17:11', '2024-12-27 20:16:59'),
-(15, 5, 41, '2025-02-01', '2025-06-19', 0, 75900.00, 'confirmed', 'CC_1735334972156', 'credit_card', '2024-12-27 22:29:32', '2024-12-27 21:29:11');
+(15, 5, 41, '2025-02-01', '2025-06-19', 0, 75900.00, 'confirmed', 'CC_1735334972156', 'credit_card', '2024-12-27 22:29:32', '2024-12-27 21:29:11'),
+(17, 7, 51, '2025-02-02', '2025-02-28', 0, 20800.00, 'confirmed', 'CC_1735336518103', 'credit_card', '2024-12-27 22:55:18', '2024-12-27 21:55:05'),
+(20, 1, 45, '2025-01-01', '2025-01-31', 0, 22500.00, 'pending', NULL, NULL, NULL, '2024-12-27 22:06:02'),
+(21, 5, 40, '2025-01-01', '2025-04-30', 0, 214200.00, 'confirmed', 'CC_1735337601246', 'credit_card', '2024-12-27 23:13:21', '2024-12-27 22:13:07');
 
 -- --------------------------------------------------------
 
@@ -228,7 +226,7 @@ INSERT INTO `hotels` (`id`, `name`, `description`, `city`, `address`, `image`, `
 (35, 'Sahrai Hotel Fes', 'Contemporary luxury hotel with stunning views of the Fes Medina and Atlas Mountains.', 'Fes', 'Dhar El Mehraz, 30000 Fes, Morocco', 'https://i.pinimg.com/736x/95/35/e4/9535e416ae0cc397c20c6e556900cd1a.jpg', '[\"Infinity Pool\", \"Givenchy Spa\", \"Rooftop Bar\", \"Fitness Center\", \"Tennis Court\"]', '2024-12-26 18:27:43', '2024-12-27 16:31:10'),
 (36, 'Movenpick Hotel Casablanca', 'Modern luxury in the heart of Casablancas business district with stunning city views.', 'Casablanca', 'Corner of Avenue Hassan II, 20070 Casablanca, Morocco', 'https://nomadpub.com/wp-content/uploads/2021/06/8976-s8.jpg', '[\"Rooftop Pool\", \"Spa\", \"Business Center\", \"Multiple Restaurants\", \"Fitness Center\"]', '2024-12-26 18:27:43', '2024-12-27 16:31:19'),
 (37, 'Hyatt Regency Casablanca', 'Elegant hotel in the heart of Casablanca, offering views of the Hassan II Mosque and the Atlantic Ocean.', 'Casablanca', 'Place des Nations Unies, 20000 Casablanca, Morocco', 'https://media-cdn.tripadvisor.com/media/photo-s/16/bf/05/c7/caption.jpg', '[\"Swimming Pool\", \"Spa\", \"Multiple Restaurants\", \"Casino\", \"Business Center\"]', '2024-12-26 18:27:43', '2024-12-27 16:31:31'),
-(38, 'Atlas Sky Hotel Tangier', 'Modern hotel with panoramic views of the Strait of Gibraltar and the Mediterranean beach.', 'Tangier', 'Route de Malabata, 90000 Tangier, Morocco', 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/16235579.jpg?k=bf1849b4a4e3949f1f7ba8c2d7b7f1bc09ec1748e6857079bbdc9eaaa66b6b48&o=&hp=1', '[\"Infinity Pool\",\" Beach Access\",\" Spa\",\" Multiple Restaurants\",\" Fitness Center\"]', '2024-12-26 18:27:43', '2024-12-27 21:27:02'),
+(38, 'Atlas Sky Hotel Tangier', 'Modern hotel with panoramic views of the Strait of Gibraltar and the Mediterranean beach.', 'Tangier', 'Route de Malabata, 90000 Tangier, Morocco', 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/16235579.jpg?k=bf1849b4a4e3949f1f7ba8c2d7b7f1bc09ec1748e6857079bbdc9eaaa66b6b48&o=&hp=1', '[\"Infinity Pool\",\"   Beach Access\",\"   Spa\",\"   Multiple Restaurants\",\"   Fitness Center\"]', '2024-12-26 18:27:43', '2024-12-27 22:04:16'),
 (39, 'Hilton Garden Inn Tanger City Center', 'Contemporary hotel in Tangiers business district with modern amenities.', 'Tangier', 'Place du Maghreb Arabe, 90000 Tangier, Morocco', 'https://ak-d.tripcdn.com/images/220p0u000000j2eq40242_R_960_660_R5_D.jpg', '[\"Business Center\", \"Restaurant\", \"Fitness Center\", \"Meeting Rooms\"]', '2024-12-26 18:27:43', '2024-12-27 16:32:49'),
 (40, 'Le Medina Essaouira Hotel Thalassa Sea & Spa', 'Beachfront resort combining traditional Moroccan style with modern comfort.', 'Essaouira', 'Avenue Mohamed V, 44000 Essaouira, Morocco', 'https://hb.bankturov.ru/upload/media/hotel/0019/99/thumb_1898855_hotel_big.jpeg', '[\"Private Beach\", \"Thalassotherapy\", \"Pool\", \"Tennis Courts\", \"Water Sports\"]', '2024-12-26 18:27:43', '2024-12-27 16:33:25'),
 (41, 'Four Seasons Hotel Rabat At Kasr Al BahR', 'luxurious hotel in rabat', 'Rabat', 'rabat ksar al bahr', 'https://avatars.mds.yandex.net/i?id=c5e891c6e8388ee903da49a709589e24b4f08977-7763867-images-thumbs&n=13', '[\"tv\",\"  wifi\",\"  speakers\",\" kitchen\"]', '2024-12-27 20:47:40', '2024-12-27 20:47:54');
@@ -254,15 +252,13 @@ CREATE TABLE `payments` (
 --
 
 INSERT INTO `payments` (`id`, `booking_id`, `payment_id`, `payment_method`, `amount`, `payment_date`, `created_at`) VALUES
-(1, 1, 'CC_1735261638609', 'credit_card', 16500.00, '2024-12-27 02:07:18', '2024-12-27 01:07:18'),
 (2, 2, 'CC_1735261775953', 'credit_card', 28800.00, '2024-12-27 02:09:36', '2024-12-27 01:09:36'),
-(3, 4, 'CC_1735262328953', 'credit_card', 69000.00, '2024-12-27 02:18:49', '2024-12-27 01:18:49'),
-(4, 3, 'CC_1735262344806', 'credit_card', 0.00, '2024-12-27 02:19:04', '2024-12-27 01:19:04'),
-(5, 7, 'CC_1735262579795', 'credit_card', 12600.00, '2024-12-27 02:22:59', '2024-12-27 01:22:59'),
 (6, 8, 'CC_1735316340564', 'credit_card', 10500.00, '2024-12-27 17:19:00', '2024-12-27 16:19:00'),
 (7, 10, 'CC_1735330268458', 'credit_card', 24000.00, '2024-12-27 21:11:08', '2024-12-27 20:11:08'),
-(8, 11, 'CC_1735330631048', 'credit_card', 32400.00, '2024-12-27 21:17:11', '2024-12-27 20:17:11'),
-(10, 15, 'CC_1735334972156', 'credit_card', 75900.00, '2024-12-27 22:29:32', '2024-12-27 21:29:32');
+(10, 15, 'CC_1735334972156', 'credit_card', 75900.00, '2024-12-27 22:29:32', '2024-12-27 21:29:32'),
+(11, 17, 'CC_1735336518103', 'credit_card', 20800.00, '2024-12-27 22:55:18', '2024-12-27 21:55:18'),
+(12, 5, 'CC_1735337442411', 'credit_card', 17400.00, '2024-12-27 23:10:42', '2024-12-27 22:10:42'),
+(13, 21, 'CC_1735337601246', 'credit_card', 214200.00, '2024-12-27 23:13:21', '2024-12-27 22:13:21');
 
 -- --------------------------------------------------------
 
@@ -331,7 +327,7 @@ INSERT INTO `rooms` (`id`, `hotel_id`, `name`, `type`, `price`, `description`, `
 (58, 38, 'Panoramic Suite', 'Suite', 520.00, 'Luxurious suite with wraparound views of the sea and city.', 'https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1200', 4, 80.00, 'Sea and City View', '[\"Two Bedrooms\", \"Living Room\", \"Private Terrace\", \"Mini Bar\"]', '2024-12-26 18:27:43', '2024-12-26 18:27:43'),
 (59, 40, 'Ocean View Room', 'Deluxe', 280.00, 'Comfortable room with direct ocean views.', 'https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1200', 2, 32.00, 'Ocean View', '[\"Queen Bed\", \"Balcony\", \"Mini Bar\", \"Safe\"]', '2024-12-26 18:27:43', '2024-12-26 18:27:43'),
 (60, 40, 'Beach Suite', 'Suite', 480.00, 'Spacious suite with private terrace and beach access.', 'https://images.unsplash.com/photo-1602002418082-a4443e081dd1?q=80&w=1200', 3, 70.00, 'Ocean Front', '[\"King Bed\", \"Living Area\", \"Private Terrace\", \"Direct Beach Access\"]', '2024-12-26 18:27:43', '2024-12-26 18:27:43'),
-(66, 38, 'standar chambre', 'famillly', 322.00, 'luxurious chabre', 'https://avatars.mds.yandex.net/i?id=2770590923415cd6f74c18fa167ebf50de62d40d-8806475-images-thumbs&n=13', 4, 22.00, 'beach', '0', '2024-12-27 21:26:43', '2024-12-27 21:26:43');
+(66, 38, 'standar chambre', 'famillly', 322.00, 'luxurious chabre', 'https://avatars.mds.yandex.net/i?id=2770590923415cd6f74c18fa167ebf50de62d40d-8806475-images-thumbs&n=13', 4, 22.00, '0', '[\"tv\",\" wifi\",\" speakers\",\"kitchen\"]', '2024-12-27 21:26:43', '2024-12-27 21:49:47');
 
 -- --------------------------------------------------------
 
@@ -355,7 +351,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `role`, `created_at`) VALUES
 (1, 'Admin', 'admin@hotelly.com', '$2y$12$7JnRlBJturPMDSlC3S7AE.zwtnsiNqcpMpmsAX9dAAbo7c1s/icj.', 'admin', '2024-12-26 11:21:33'),
 (5, 'anas serghini', 'anas@anas.com', '$2y$10$0W1SP0uKCcbzRTtspJuDXuRyrLLek5q3bJt4xzs7qoLOXyb6q/ukG', 'user', '2024-12-26 16:24:39'),
-(6, 'bachir ', 'bachir@hotelly.com', '$2y$10$68wM1svQg.CMax3XDO8/7ezyLndZVPgvfc97DJww4EdFkHVNv5gmW', 'admin', '2024-12-27 20:16:27');
+(7, 'bachir', 'bachir@hotelly.com', '$2y$10$3NzdZ0iq2Xyx6e0LXMcEmuxiXGFdGQ7w1y42XQ11xYxoNsOW225x.', 'admin', '2024-12-27 21:54:01');
 
 --
 -- Index pour les tables déchargées
@@ -413,7 +409,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour la table `bookings`
 --
 ALTER TABLE `bookings`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT pour la table `hotels`
@@ -425,7 +421,7 @@ ALTER TABLE `hotels`
 -- AUTO_INCREMENT pour la table `payments`
 --
 ALTER TABLE `payments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT pour la table `reviews`
@@ -443,7 +439,7 @@ ALTER TABLE `rooms`
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Contraintes pour les tables déchargées
