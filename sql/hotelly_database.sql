@@ -20,6 +20,9 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `hotelly`
 --
+-- Create and use the database
+CREATE DATABASE IF NOT EXISTS `hotelly`;
+USE `hotelly`;
 
 DELIMITER $$
 --
