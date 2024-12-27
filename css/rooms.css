@@ -1,0 +1,172 @@
+/* Page Header */
+.page-header {
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.header-content {
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.header-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Filters Section */
+.filters-section {
+    background: white;
+    padding: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filters-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-group label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.filter-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.filter-input:focus {
+    border-color: #2c3e50;
+    outline: none;
+}
+
+.btn-solid {
+    width: 100%;
+    padding: 12px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1em;
+    margin-top: 24px;
+}
+
+.btn-solid:hover {
+    background: #34495e;
+}
+
+/* Hotel Information */
+.hotel-info {
+    margin: 8px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.hotel-info .separator {
+    margin: 0 8px;
+    color: #999;
+}
+
+.hotel-name {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.hotel-city {
+    color: #666;
+}
+
+/* Rooms Section */
+.rooms-section {
+    padding: 4rem 0;
+    background: #f8f8f8;
+}
+
+.room-card {
+    background: white;
+    margin-bottom: 2rem;
+}
+
+.room-type {
+    font-size: 0.9rem;
+    color: #D4BEA3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.room-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.room-price {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.room-price span {
+    font-size: 1rem;
+    color: #666;
+}
+
+.btn-text {
+    color: #D4BEA3;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.btn-text:hover {
+    color: #b39c82;
+}
+
+/* Active Navigation Link */
+.nav-link.active {
+    color: #D4BEA3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .filters-form {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,59 @@
+/* Custom styles */
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Hero section overlay */
+.hero-overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+}
+
+/* Smooth transitions */
+.transition-all {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Custom button styles */
+.btn-primary {
+    @apply bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors duration-200;
+}
+
+.btn-outline {
+    @apply border border-white text-white px-6 py-2 rounded-md hover:bg-white hover:text-gray-900 transition-colors duration-200;
+}
+
+/* Form styling */
+.form-input {
+    @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500;
+}
+
+/* Card hover effects */
+.card-hover {
+    @apply transform transition-transform duration-300 hover:scale-105;
+}
+
+/* Custom spacing utilities */
+.section-padding {
+    @apply py-16 md:py-24;
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Animation utilities */
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
